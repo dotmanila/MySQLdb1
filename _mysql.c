@@ -573,8 +573,8 @@ _mysql_ConnectionObject_Initialize(
 				  NULL } ;
 	int connect_timeout = 0;
 #ifdef HAVE_MYSQL_OPT_TIMEOUTS
-        int read_timeout = 0;
-        int write_timeout = 0;
+        int read_timeout = 30;
+        int write_timeout = 60;
 #endif
 	int compress = -1, named_pipe = -1, local_infile = -1;
 	char *init_command=NULL,
